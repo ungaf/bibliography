@@ -1,0 +1,61 @@
+section_of_theory_of_literature
+=> nrel_main_idtf:
+	[Раздел. Теория литературы]
+		(* <- lang_ru;; *);
+
+
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+	section_of_literary_genres;
+	section_literary_work;
+	section_types_of_publications;
+	section_classification_of_literature_types;
+	section_classification_of_literature_problems;
+        section_of_Old_Russian_literarature_genres;
+	section_fictional_characters;
+        section_folklore_genres;
+        section_drama_genres
+	};;
+
+section_of_theory_of_literature =  [*^"file://section_theory_of_literature.scsi"*];;
+
+section_of_theory_of_literature
+-> rrel_key_sc_element: 
+	nrel_languages_of_work;
+	nrel_literary_award;
+	literary_award;
+	scenario;
+	essayist;
+	futurism;
+	literary_criticism;
+	magazine;
+	newspaper;
+	review;
+	censorship;
+	publication;
+	samizdat;
+	live_publication;
+	nrel_circulation;
+	nrel_library_reference;
+	nrel_quote;
+	publishing_house;
+	scientific_work;
+	religious_text;
+	nrel_languages_of_work;
+	nrel_literary_award;
+	literary_award;
+	nrel_style_of_author;
+	reader;
+	nrel_screen_version;;
+
+
+
+	
+
+
+
+
+
+
+

@@ -1,0 +1,218 @@
+sonnet 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[сонет] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сонет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/sonnet.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+fable 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[басня] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(басня)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/fable.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+ode 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[ода] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(ода)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/ode.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+ode
+	<= nrel_using_constants:...
+        	(*
+       	     		-> lit_person;;
+       	     		-> nrel_event;;
+      	  	*);;
+
+
+hymn 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[гимн] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(гимн)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/hymn.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+monostich 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[моностих] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(моностих)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/monostich.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+monostich
+	<= nrel_using_constants:...
+        	(*
+       	     		-> literary_work;;
+      	  	*);;
+
+dithyramb 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[дифирамб] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(дифирамб)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/dithyramb.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+dithyramb
+	<= nrel_using_constants:...
+        	(*
+       	     		-> hymn;;
+      	  	*);;
+
+elegy 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[элегия] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(элегия)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/elegy.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+verse 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[стих] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(стих)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/verse.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+verse
+	<= nrel_using_constants:...
+        	(*
+       	     		-> literary_work;;
+      	  	*);;
+
+stanze 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[стансы] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(стансы)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/stanze.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+romance 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[романс] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(романс)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/romance.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+romance
+	<= nrel_using_constants:...
+        	(*
+       	     		-> verse;;
+      	  	*);;
+
+genre_poem 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[поэма] 
+			(* <-lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(поэма)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/genre_poem.html" (* <-lang_ru;; *);;
+				*);;
+		*);;

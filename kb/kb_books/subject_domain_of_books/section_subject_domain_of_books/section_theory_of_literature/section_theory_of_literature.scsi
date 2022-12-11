@@ -1,0 +1,816 @@
+
+scenario
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [сценарий] (* <- lang_ru;; *);;
+
+scenario
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(сценарий)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/scenario1.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> literary_work;;
+        *);;
+    *);;
+
+scenario
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(сценарий)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/scenario2.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre_play;;
+        *);;
+    *);;
+
+essayist
+<- sc_node_not_relation;
+<- person;
+
+=> nrel_main_idtf:
+            [эссеист] (* <- lang_ru;; *);;
+
+genre_miniature
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(миниатюра)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/essayist.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> genre_essay;;
+            -> nrel_author;;
+            -> writer;;         
+        *);;
+    *);;
+
+futurism
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [футуризм] (* <- lang_ru;; *);;
+
+futurism
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(футуризм)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/futurism1.html";;
+        *);;
+    *);;
+futurism
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(футуризм, писатель, поэт)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_defining_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/futurism2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> writer;;
+            -> poet;;
+        *);;
+    *);;
+
+literary_criticism
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [литературоведение] (* <- lang_ru;; *);;
+
+literary_criticism
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(литературоведение)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/literary_criticism1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> fiction;;
+           
+        *);;
+    *);;
+literary_criticism
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(литературоведение, история литературы)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/literary_criticism2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> subject_domain_history_of_literature;;
+        *);;
+        
+    *);;
+
+magazine
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [журнал] (* <- lang_ru;; *);;
+
+magazine
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(журнал)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/magazine1.html";;
+        *);;
+        
+    *);;
+magazine
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(журнал, газета)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/magazine2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> newspaper;;
+        *);;
+        
+    *);;
+
+newspaper
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [газета] (* <- lang_ru;; *);;
+
+newspaper
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(газета)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/newspaper1.html";;
+        *);;
+        
+    *);;
+newspaper
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(газета] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/newspaper2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> newspaper;;
+        *);;
+        
+    *);;
+
+review
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [рецензия] (* <- lang_ru;; *);;
+
+review
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(рецензия)] (* <- lang_ru;;*);;
+        <- definition;;
+        
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/review1.html";;
+        *);;
+         <= nrel_using_constants:...
+        (*
+            -> fiction;;
+            -> genre;;
+            
+        *);;
+    *);;
+review
+    <- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Утв.(рецензия, литературное произведение, писатель, жанр)] (* <- lang_ru;;*);;
+        <- statement;;
+        <- statement_of_common_type;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/review2.html";;
+        *);;
+        <= nrel_using_constants:...
+        (*
+            -> literary_work;;
+            -> writer;;
+            -> genre;;
+        
+        *);;
+        
+    *);;
+
+
+journalism
+
+<- sc_node_not_relation;
+
+=> nrel_main_idtf:
+            [публицистика] (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:...
+    (*
+        => nrel_main_idtf:[Опр.(публицистика)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/journalism.html";;
+        *);;
+    *);;
+
+
+sc_node_not_relation -> censorship;;
+
+censorship => nrel_main_idtf:
+        [цензура](*<-lang_ru;;*);;
+
+Definition_censorship
+    => nrel_main_idtf:
+        [Опр.(цензура)]  (* <- lang_ru;; *);;
+
+censorship <- rrel_key_sc_element: Definition_censorship
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//censorship.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> contents;;
+        -> literary_work;;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> literary_award;;
+
+literary_award => nrel_main_idtf:
+        [литературная премия](*<-lang_ru;;*);;
+
+Definition_literary_award
+    => nrel_main_idtf:
+        [Опр.(литературная премия)]  (* <- lang_ru;; *);;
+
+literary_award <- rrel_key_sc_element: Definition_literary_award
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//literary_award.html";;	
+		*);;
+	<= nrel_using_constants:...
+        (*
+            -> literary_work;;
+        *);;
+	*);;
+
+literary_award <- rrel_key_sc_element: ...
+(*
+    => nrel_main_idtf:[Утв.(литературная премия)] (* <- lang_ru;;*);;
+    <- statement;;
+    <- statement_of_common_type;;
+    <= nrel_sc_text_translation:...
+    (*
+        -> rrel_example: "file://htmls//literary_award_statment.html";;
+    *);;
+*);;
+
+
+sc_node_not_relation -> live_publication;;
+
+live_publication => nrel_main_idtf:
+        [живая публикация](*<-lang_ru;;*);;
+
+Definition_live_publication
+    => nrel_main_idtf:
+        [Опр.(живая публикация)]  (* <- lang_ru;; *);;
+
+live_publication <- rrel_key_sc_element: Definition_live_publication
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//live_publication.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> writer;;
+		*);;
+	*);;
+
+sc_node_norole_relation->nrel_languages_of_work;;
+
+nrel_languages_of_work=>nrel_main_idtf:
+[язык произведений*](*<-lang_ru;;*);;
+
+
+Definition_nrel_languages_of_work 
+    => nrel_main_idtf:
+        [Опр.(язык произведений*)]  (* <- lang_ru;; *);;
+
+nrel_languages_of_work 
+    => nrel_first_domain: 
+        writer;
+    => nrel_second_domain: 
+        languages;
+
+<- rrel_key_sc_element: Definition_nrel_languages_of_work 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_languages_of_work.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> writer;;
+		-> literary_work;;
+		*);;
+	*);;
+
+
+nrel_languages_of_work <- binary_relation;;
+nrel_languages_of_work <- oriented_relation;;
+nrel_languages_of_work <- antisymmetric_relation;;
+nrel_languages_of_work <- antitransitive_relation;;
+nrel_languages_of_work <- antireflexive_relation;;
+
+nrel_languages_of_work => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+    -> writer;;
+    -> languages;;
+	*);;
+   		 *);;
+
+sc_node_norole_relation->nrel_literary_award;;
+
+nrel_literary_award=>nrel_main_idtf:
+[литературная премия*](*<-lang_ru;;*);;
+
+
+Definition_nrel_literary_award
+    => nrel_main_idtf:
+        [Опр.(литературная премия*)]  (* <- lang_ru;; *);;
+
+nrel_literary_award 
+    => nrel_first_domain: 
+        writer;
+    => nrel_second_domain: 
+        literary_award;;
+
+nrel_literary_award <- rrel_key_sc_element: Definition_nrel_literary_award
+	(*
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_literary_award.html";;	
+	    *);;
+    <= nrel_using_constants:...
+    (*
+        -> literary_award;;
+        -> writer;;
+    *);;
+	*);;
+
+
+nrel_literary_award <- binary_relation;;
+nrel_literary_award <- oriented_relation;;
+nrel_literary_award <- antisymmetric_relation;;
+nrel_literary_award <- antitransitive_relation;;
+nrel_literary_award <- antireflexive_relation;;
+
+nrel_literary_award => nrel_definitional_domain:
+    ...
+    (*
+    -> writer;;
+    -> literary_award;;
+    *);;
+
+
+sc_node_norole_relation->nrel_quote;;
+
+nrel_quote=>nrel_main_idtf:
+[цитата*](*<-lang_ru;;*);;
+
+
+Definition_nrel_quote 
+    => nrel_main_idtf:
+        [Опр.(цитата*)]  (* <- lang_ru;; *);;
+
+nrel_quote
+    => nrel_first_domain: 
+        literary_work;
+    => nrel_second_domain: 
+        literary_work;
+
+<- rrel_key_sc_element: Definition_nrel_quote 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_quote.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> literary_work;;
+		*);;
+	*);;
+
+
+nrel_quote <- binary_relation;;
+nrel_quote <- oriented_relation;;
+nrel_quote <- antisymmetric_relation;;
+nrel_quote <- transitive_relation;;
+nrel_quote <- reflexive_relation;;
+
+nrel_quote => nrel_definitional_domain:
+    ... 
+    (*
+    -> literary_work;;
+	*);;
+   		 
+
+sc_node_norole_relation->nrel_library_reference;;
+
+nrel_library_reference=>nrel_main_idtf:
+[библиографическая ссылка*](*<-lang_ru;;*);;
+
+
+Definition_nrel_library_reference
+    => nrel_main_idtf:
+        [Опр.(библиографическая ссылка*)]  (* <- lang_ru;; *);;
+
+nrel_library_reference
+    => nrel_first_domain: 
+        literary_work;
+    => nrel_second_domain: 
+        literary_work;
+
+<- rrel_key_sc_element: Definition_nrel_library_reference
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_library_reference.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> reader;;
+		-> literary_work;;
+		*);;
+	*);;
+
+
+nrel_library_reference <- binary_relation;;
+nrel_library_reference <- oriented_relation;;
+nrel_library_reference <- antisymmetric_relation;;
+nrel_library_reference <- antitransitive_relation;;
+nrel_library_reference <- antireflexive_relation;;
+
+nrel_library_reference => nrel_definitional_domain:
+    ... 
+    (*
+    -> literary_work;;
+	*);;
+
+sc_node_norole_relation->nrel_screen_version;;
+
+nrel_screen_version=>nrel_main_idtf:
+[экранизация*](*<-lang_ru;;*);;
+
+
+Definition_nrel_screen_version
+    => nrel_main_idtf:
+        [Опр.(экранизация*)]  (* <- lang_ru;; *);;
+
+nrel_screen_version 
+    => nrel_first_domain: 
+        literary_work;
+    => nrel_second_domain: 
+        video_sequence;
+
+<- rrel_key_sc_element: Definition_nrel_screen_version 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_screen_version.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> video_sequence;;
+		-> literary_work;;
+		*);;
+	*);;
+
+
+nrel_screen_version <- binary_relation;;
+nrel_screen_version <- oriented_relation;;
+nrel_screen_version <- antisymmetric_relation;;
+nrel_screen_version <- antitransitive_relation;;
+nrel_screen_version <- antireflexive_relation;;
+
+nrel_screen_version => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+    -> literary_work;;
+    -> video_sequence;;
+	*);;
+   		 *);;
+
+
+sc_node_norole_relation->nrel_style_of_author;;
+
+nrel_style_of_author=>nrel_main_idtf:
+[авторский стиль*](*<-lang_ru;;*);;
+
+
+Definition_nrel_style_of_author 
+    => nrel_main_idtf:
+        [Опр.(авторский стиль*)]  (* <- lang_ru;; *);;
+
+nrel_style_of_author 
+    => nrel_first_domain: 
+        writer;
+    => nrel_second_domain: 
+        literary_reception;
+
+<- rrel_key_sc_element: Definition_nrel_style_of_author 
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_style_of_author.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> literary_work;;
+		-> literary_reception;;
+        -> nrel_author;;
+		*);;
+	*);;
+
+
+nrel_style_of_author <- binary_relation;;
+nrel_style_of_author <- oriented_relation;;
+nrel_style_of_author <- antisymmetric_relation;;
+nrel_style_of_author <- antitransitive_relation;;
+nrel_style_of_author <- antireflexive_relation;;
+
+nrel_style_of_author => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+    -> writer;;
+    -> literary_reception;;
+	*);;
+   		 *);;
+
+sc_node_not_relation -> publication;;
+
+publication => nrel_main_idtf:
+        [публикация](*<-lang_ru;;*);;
+
+Definition_publication
+    => nrel_main_idtf:
+        [Опр.(публикация)]  (* <- lang_ru;; *);;
+
+publication <- rrel_key_sc_element: Definition_publication
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//publication.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> magazine;;
+		-> newspaper;;
+		*);;
+	*);;
+
+sc_node_not_relation -> publishing_house;;
+
+publishing_house => nrel_main_idtf:
+        [издательство](*<-lang_ru;;*);;
+
+Definition_publishing_house
+    => nrel_main_idtf:
+        [Опр.(издательство)]  (* <- lang_ru;; *);;
+
+publishing_house <- rrel_key_sc_element: Definition_publishing_house
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//publishing_house.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> book;;
+		*);;
+	*);;
+
+sc_node_not_relation -> religious_text;;
+
+religious_text => nrel_main_idtf:
+        [религиозный текст](*<-lang_ru;;*);;
+
+Definition_religious_text
+    => nrel_main_idtf:
+        [Опр.(религиозный текст)]  (* <- lang_ru;; *);;
+
+religious_text <- rrel_key_sc_element: Definition_religious_text
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//religious_text.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> artistic_text;;
+		*);;
+	*);;
+
+
+sc_node_not_relation -> samizdat;;
+
+samizdat => nrel_main_idtf:
+        [самиздат](*<-lang_ru;;*);;
+
+Definition_samizdat
+    => nrel_main_idtf:
+        [Опр.(самиздат)]  (* <- lang_ru;; *);;
+
+samizdat <- rrel_key_sc_element: Definition_samizdat
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//samizdat.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> literary_work;;
+        -> journalism;;
+        -> religious_text;;
+        -> censorship;;
+		*);;
+	*);;
+
+sc_node_not_relation -> scientific_work;;
+
+scientific_work => nrel_main_idtf:
+        [научная работа](*<-lang_ru;;*);;
+
+Definition_scientific_work
+    => nrel_main_idtf:
+        [Опр.(научная работа)]  (* <- lang_ru;; *);;
+
+scientific_work <- rrel_key_sc_element: Definition_scientific_work
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//scientific_work.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> book;;
+		*);;
+	*);;
+
+sc_node_not_relation -> reader;;
+
+reader => nrel_main_idtf:
+        [читатель](*<-lang_ru;;*);;
+
+Definition_reader
+    => nrel_main_idtf:
+        [Опр.(читатель)]  (* <- lang_ru;; *);;
+
+reader <- rrel_key_sc_element: Definition_reader
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//reader.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> writer;;
+		-> literary_work;;
+		*);;
+	*);;
+
+sc_node_norole_relation->nrel_circulation;;
+
+nrel_circulation=>nrel_main_idtf:
+[тираж*](*<-lang_ru;;*);;
+
+
+Definition_circulation
+    => nrel_main_idtf:
+        [Опр.(тираж*)]  (* <- lang_ru;; *);;
+
+nrel_circulation
+    => nrel_first_domain: 
+        book;
+    => nrel_second_domain: 
+        value;
+
+<- rrel_key_sc_element: Definition_circulation
+	(*
+	<-definition;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls//nrel_circulation.html";;	
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> magazine;;
+		-> newspaper;;
+        -> book;;
+		*);;
+	*);;
+
+
+nrel_circulation <- binary_relation;;
+nrel_circulation <- oriented_relation;;
+nrel_circulation <- antisymmetric_relation;;
+nrel_circulation <- antitransitive_relation;;
+nrel_circulation <- antireflexive_relation;;
+
+nrel_circulation => nrel_definitional_domain:
+    ... (* <= nrel_combination:...
+    (*
+    -> book;;
+    -> value;;
+	*);;
+   		 *);;

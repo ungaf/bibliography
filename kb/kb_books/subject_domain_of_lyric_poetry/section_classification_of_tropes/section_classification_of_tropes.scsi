@@ -1,0 +1,442 @@
+trope 
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: 
+		[троп] 
+			(* <-lang_ru;; *);
+	=> nrel_idtf:
+		 [средство художественной выразительности] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(троп)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/trope.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+litotes
+	<- trope;
+	=> nrel_main_idtf: 
+		[литота] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(литота)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/litotes.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  trope;;
+				*);;
+		*);;
+
+metaphor
+	<- trope;
+	=> nrel_main_idtf: 
+		[метафора] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(метафора)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/metaphor.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+epithet
+	<- trope;
+	=> nrel_main_idtf: 
+		[эпитет] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(эпитет)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/epithet.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+parallelism
+	<- trope;
+	=> nrel_main_idtf: 
+		[параллелизм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(параллелизм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/parallelism.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+allegory
+	<- trope;
+	=> nrel_main_idtf: 
+		[аллегория] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(аллегория)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/allegory.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+irony
+	<- trope;
+	=> nrel_main_idtf: 
+		[ирония] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(ирония)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/irony.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+simile
+	<- trope;
+	=> nrel_main_idtf: 
+		[сравнение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сравнение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/simile.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  trope;;
+				*);;
+		*);;
+
+personification
+	<- trope;
+	=> nrel_main_idtf: 
+		[олицетворение] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(олицетворение)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/personification.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  person;;
+				*);;
+		*);;
+
+hyperbole
+	<- trope;
+	=> nrel_main_idtf: 
+		[гипербола] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(гипербола)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/hyperbole.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  person;;
+				*);;
+		*);;
+
+circumlocution
+	<- trope;
+	=> nrel_main_idtf: 
+		[перифраз] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(перифраз)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/circumlocution.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+oxymoron
+	<- trope;
+	=> nrel_main_idtf: 
+		[оксюморон] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(оксюморон)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/oxymoron.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  person;;
+				*);;
+		*);;
+
+reiteration
+	<- trope;
+	=> nrel_main_idtf: 
+		[лексический повтор] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(лексический повтор)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/reiteration.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+parallel_structure
+	<- trope;
+	=> nrel_main_idtf: 
+		[синтаксический параллелизм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(синтаксический параллелизм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/parallel_structure.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+inversion
+	<- trope;
+	=> nrel_main_idtf: 
+		[инверсия] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(инверсия)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/inversion.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+pathos
+	<- trope;
+	=> nrel_main_idtf: 
+		[пафос] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(Пафос)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/pathos.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+euphemism
+	<- trope;
+	=> nrel_main_idtf: 
+		[эвфемизм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(эвфемизм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/euphemism.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+synecdoche
+	<- trope;
+	=> nrel_main_idtf: 
+		[синекдоха] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(синекдоха)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/synecdoche.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  trope;;
+				*);;
+		*);;
+
+dysphemism
+	<- trope;
+	=> nrel_main_idtf: 
+		[дисфемизм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(дисфемизм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/dysphemism.html" (* <-lang_ru;; *);;
+				*);;
+		*);;
+
+metonymy
+	<- trope;
+	=> nrel_main_idtf: 
+		[метонимия] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(метонимия)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/metonymy.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  trope;;
+				*);;
+		*);;
+
+sarcasm
+	<- trope;
+	=> nrel_main_idtf: 
+		[сарказм] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(сарказм)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/sarcasm.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  irony;;
+				*);;
+		*);;
+
+pun
+	<- trope;
+	=> nrel_main_idtf: 
+		[каламбур] 
+			(* <-lang_ru;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			=> nrel_main_idtf: [Опр.(каламбур)] (* <-lang_ru;; *);;
+		    <= nrel_sc_text_translation:
+				...
+				(* 
+		            -> rrel_example: "file://content/pun.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					->  irony;;
+				*);;
+		*);;
