@@ -1,12 +1,12 @@
 nrel_origin
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-            [происхождение*] (* <- lang_ru;; *);;
+            [происхождение* ] (* <- lang_ru;; *);;
 
 nrel_edition
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-            [издание*] (* <- lang_ru;; *);;
+            [издание* ] (* <- lang_ru;; *);;
 
 
 publishing_house_Aversav
@@ -547,10 +547,10 @@ publishing_house_Dengeki_Bunko_Magazine
 
 => nrel_main_idtf:
             ["Dengeki Bunko Magazine"] (* <- lang_en;; *);
-            ["Журнал Dengeki Bunko"] (* <- lang_ru;; *);
+            ["Журнал Dengeki Bunko"] (* <- lang_ru;; *);;
 publishing_house_Dengeki_Bunko_Magazine
 ->nrel_origin:
-country_Japan;;
+    country_Japan;;
 
 publishing_house_Dengeki_Bunko_Magazine
     <- rrel_key_sc_element:...
@@ -568,10 +568,10 @@ publishing_house_The_Sneaker
 
 => nrel_main_idtf:
             ["The Sneaker"] (* <- lang_en;; *);
-            ["The Sneaker"] (* <- lang_ru;; *);
+            ["The Sneaker"] (* <- lang_ru;; *);;
 publishing_house_The_Sneaker
 ->nrel_origin:
-country_Japan;;
+    country_Japan;;
 
 publishing_house_The_Sneaker
     <- rrel_key_sc_element:...
@@ -579,27 +579,29 @@ publishing_house_The_Sneaker
         <= nrel_using_constants:...
         (*
             -> publishing_house;;
-		->country_Japan;;
+		    -> country_Japan;;
         *);;
     *);;
 
-publishing_house_Mephiso
-<- sc_node_not_relation;
-<- publishing_house;
-
-=> nrel_main_idtf:
-            ["Mephisto"] (* <- lang_en;; *);
-            ["Мефисто"] (* <- lang_ru;; *);
 publishing_house_Mephisto
-->nrel_origin:
-country_Japan;;
-
-publishing_house_Mephisto
-    <- rrel_key_sc_element:...
+    <- sc_node_not_relation;
+    <- publishing_house;
+    => nrel_main_idtf:
+                ["Mephisto"] (* <- lang_en;; *);
+                ["Мефисто"] (* <- lang_ru;; *);
+    -> nrel_origin:
+        country_Japan;
+    <- rrel_key_sc_element: ...
     (*
-        <= nrel_using_constants:...
+        => nrel_main_idtf:[Опр.(Мефисто)] (* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Mephisto.html";;
+        *);;
+        <= nrel_using_constants: ...
         (*
             -> publishing_house;;
-		->country_Japan;;
+		    -> country_Japan;;
         *);;
     *);;
