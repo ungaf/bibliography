@@ -541,3 +541,65 @@ publishing_house_ROSMEN
         *);;
     *);;
 
+publishing_house_Dengeki_Bunko_Magazine
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Dengeki Bunko Magazine"] (* <- lang_en;; *);
+            ["Журнал Dengeki Bunko"] (* <- lang_ru;; *);
+publishing_house_Dengeki_Bunko_Magazine
+->nrel_origin:
+country_Japan;;
+
+publishing_house_Dengeki_Bunko_Magazine
+    <- rrel_key_sc_element:...
+    (*
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Japan;;
+        *);;
+    *);;
+
+publishing_house_The_Sneaker
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["The Sneaker"] (* <- lang_en;; *);
+            ["The Sneaker"] (* <- lang_ru;; *);
+publishing_house_The_Sneaker
+->nrel_origin:
+country_Japan;;
+
+publishing_house_The_Sneaker
+    <- rrel_key_sc_element:...
+    (*
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Japan;;
+        *);;
+    *);;
+
+publishing_house_Mephiso
+<- sc_node_not_relation;
+<- publishing_house;
+
+=> nrel_main_idtf:
+            ["Mephisto"] (* <- lang_en;; *);
+            ["Мефисто"] (* <- lang_ru;; *);
+publishing_house_Mephisto
+->nrel_origin:
+country_Japan;;
+
+publishing_house_Mephisto
+    <- rrel_key_sc_element:...
+    (*
+        <= nrel_using_constants:...
+        (*
+            -> publishing_house;;
+		->country_Japan;;
+        *);;
+    *);;
