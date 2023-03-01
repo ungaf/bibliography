@@ -597,11 +597,33 @@ publishing_house_Mephisto
         <- definition;;
         <= nrel_sc_text_translation:...
         (*
-            -> rrel_example: "file://htmls/publishing_house_Mephisto.html";;
+            -> rrel_example: "file://htmls/publishing_house_Mephisto.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
         *);;
         <= nrel_using_constants: ...
         (*
             -> publishing_house;;
 		    -> country_Japan;;
+        *);;
+    *);;
+
+publishing_house_Media_Factory
+    <- sc_node_not_relation;
+    <- publishing_house;
+    => nrel_main_idtf:
+        ["Media Factory"] (* <- lang_en;; *);
+        ["Media Factory"] (* <- lang_ru;; *);
+    -> nrel_origin: country_Japan;
+    <- rrel_key_sc_element: ...
+    (*
+        => nrel_main_idtf: [Опр.(Media Factory)] (* <- lang_ru;; *);;
+        <- definition;;
+        <= nrel_sc_text_tranlsation: ...
+        (*
+            -> rrel_example: "file://htmls/publishing_house_Media_Factory.html" (* <- lang_ru;; => nrel_format: format_html;; *);;
+        *);;
+        <= nrel_using_constants: ...
+        (*
+            -> publishing_house;;
+            -> country_Japan;;
         *);;
     *);;
