@@ -1,0 +1,88 @@
+book_Classroom_Of_Elite
+    <= nrel_characters:
+        .book_Classroom_Of_Elite_characters
+        (*
+            -> rrel_main_character:
+                    char_Kiyotaka_Ayanokouji;;
+            -> char_Suzuna_Horikita;;
+            -> char_Kei_Karuizawa;;
+            -> char_Arisu_Sakayanagi;;
+            -> char_Honami_Ichinose;;
+            -> char_Airi_Sakura;;
+            -> char_Kakeru_Ryuuen;;
+            -> char_Sae_Chabashira;;
+            -> char_Kikyou_Kushida;;
+            -> char_Rokusuke_Kouenji;;
+        *);;
+
+char_Kiyotaka_Ayanokouji
+        => nrel_main_idtf: 
+            [Киётака Аянокоджи] (* <-lang_ru;; *);
+            [Kiyotaka Ayanokouji] (* <- lang_en;; *);
+        <- person;
+        <- male;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Киётака Аянокоджи)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://html/char_Kiyotaka_Ayanokouji.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Suzuna_Horikita
+        => nrel_main_idtf: 
+            [Сузуна Хорикита] (* <-lang_ru;; *);
+            [Suzuna Horikita] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Сузуна Хорикита)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://html/char_Suzuna_Horikita.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Kei_Karuizawa
+        => nrel_main_idtf: 
+            [Кей Каруизава] (* <-lang_ru;; *);
+            [Kei Karuizawa] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Кей Каруизава)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://html/char_Kei_Karuizawa.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;
+
+char_Arisu_Sakayanagi
+        => nrel_main_idtf: 
+            [Арису Сакаянаги] (* <-lang_ru;; *);
+            [Arisu Sakayanagi] (* <- lang_en;; *);
+        <- person;
+        <- female;
+        <- rrel_key_sc_element:
+            ...
+            (*
+                => nrel_main_idtf:
+                    [Описание персонажа(Арису Сакаянаги)] (* <-lang_ru;; *);;
+                <= nrel_sc_text_translation: 
+                    ...
+                    (*
+                        -> "file://html/char_Arisu_Sakayanagi.html" (* <-lang_ru;; => nrel_format: format_html;; *);;
+                    *);;
+            *);;

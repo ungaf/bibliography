@@ -1,0 +1,17 @@
+book_Classroom_Of_Elite
+    => nrel_main_idtf:
+        ["Класс превосходства"]
+            (* <- lang_ru;; *);
+    <- book;
+    <  genre_ranobe;
+    <- genre_novel;
+    => nrel_author:
+        person_Shougo_Kinugasa;
+    <= nrel_original_language:
+        lang_jp;
+    => nrel_publication_date:
+        year_2015;;
+    -> rrel_key_sc_element: ...
+    (*
+        
+    *)
